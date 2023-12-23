@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="http://localhost/FrontEnd_fima/favicon.ico">	
+		<title>Sophie Bluel - Architecte d'intérieur</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+		<meta name="description" content="">
+		<!--Icone fonts-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+		
+		
+		<link rel="stylesheet" href="./assets/style.css">
+	</head>
+	<body class="body">	
+	<!--Admin-->
+		<div class="mode-edition-espace"></div>
+		<div class="mode-edition-g"><!--flex-->
+			<div class="container-mode-edition"><!--flex-->
+				<div class="mode-edition_icone"><i class="fa-regular fa-pen-to-square"></i></div>
+				<div class="mode-edition_text">Mode édition</div>
+			</div>
+		</div>	
+		<div class="edition-corp-1">		  
+			<div class="corp-loader-1">				
+				<div class="contenaire-close-1"><!--flex-->
+					<div class="close-1"><i class="fa-solid fa-xmark close-i"></i></div>				
+				</div>				
+				<div class="container-galerie-1"><span class="galerie_text">Galerie photo</span></div>			  
+				<div class="edition-corp-img-gril-g-1">				
+					<div id="mode-edition-gallery" class=""></div>				
+				</div>	
+				<div class="edition-corp-trait-1"></div>			
+				<div class="container-bt-edition-1">
+					<div class="bt-edition-1"><span class="bt-edition-txt-1">Ajouter une photo</span></div>
+				</div>					
+			</div>			
+		</div>
+		<div class="edition-corp-2">			
+			<div class="corp-loader-2">			
+			<form name="my" class="form-">			
+				<div class="contenaire-close-2"><!--flex-->
+				    <div class="close-2-g"><i class="fa-solid fa-arrow-right fa-rotate-180 flech-return"></i></div>
+					<div class="close-2-d"><i class="fa-solid fa-xmark close-i"></i></div>				
+				</div>				
+				<div class="container-galerie-2"><span class="galerie_text-2">Ajout photo</span></div>				
+				<div class="mx-container-g">	
+					<div class="mx-contenaire_1">		
+						<div class="mx-container-img-s"><img class="mx-img-lien img-s"  width="129"/></div>			
+						<div class="mx-icon-1"></div>			
+						<input  id="mx-file" class="js-mx-file"  type="file" accept="image/*" name="image"  onchange="mx_File(event)" style="display: none;" value="">
+						<label for="mx-file"><div class="mx-bt_1"><span class="bt_1_txt">+ Ajouter photo</span></div></label>
+						<div class="mx-container-10"><span class="mx-container-10-txt">jpg,png:4mo max</span></div>			
+					</div>	  
+				</div>	
+				<div class="container-ajout-photo-input">
+					<div class="ajout-photo-4">Titre</div>
+					<div><input type="text" class="titre1" name="titre1" /></div>				
+					<div class="ajout-photo-5">Catégorie</div>				
+					  <select class="select-add-ajout-photo categorie2" name="ice-cream">
+							<option value="1">Objets</option>
+							<option value="2">Appartements</option>
+							<option value="3">Hôtels & restaurants</option>							
+					  </select>					
+				</div>				
+				<div class="edition-corp-trait-2"></div>				
+				<div class="edition-corp-2-message-envoiy">
+					<span class="edition-corp-2-message-envoiy-1">Formulaire n’est pas correctement rempli</span>
+				    <span class="edition-corp-2-message-envoiy-2">Formulaire correctement rempli</span>
+				</div>				
+				<div class="container-bt-edition-2">
+					<div class="bt-edition-2"><span class="bt-edition-txt-2">Valider</span></div>
+				</div>					
+			</div>	
+		</form>		
+		</div>
+		<!--Admin-->
+		<div class="main-container">
+			<header><!--flex-->
+				<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1><!--flex-->
+				<nav>
+					<ul>
+						<li><a class="menu-text"  href="http://localhost/FrontEnd_fima/Homepage.html#projets">projets</a></li>
+						<li><a class="menu-text"  href="http://localhost/FrontEnd_fima/Homepage.html#contact">contact</a></li>
+						<li id="menu-text3"><a class="menu-text3" href="http://localhost/login/index.html">login</a></li>
+						<li><img class="menu-icon"src="./assets/icons/instagram.png" alt="Instagram"></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section id="introduction">
+					<figure>
+						<img src="./assets/images/sophie-bluel.png" alt="">
+					</figure>
+					<article>
+						<h2>Designer d'espace</h2>
+						<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+						<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+						<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+					</article>
+				</section>
+				<section id="portfolio">				
+				    <div class="js-container">
+						<h2 id="projets">Mes Projets</h2>					
+						<div class="js-mode-edition-1"><i class="fa-regular fa-pen-to-square icone-mode-edition-2"></i><span class="js-mode-edition-txt"> modifier</span></div>
+					</div>					
+					<div class="container_filter"><!--flex-->
+						<div id="bt-filter-1" class="filter_e1 js-background-color-vert"><span class="filter_e1_text js-color-blanc">Tous</span></div>
+					    <div id="bt-filter-2" class="filter_e1"><span class="filter_e1_text">objets</span></div>
+					    <div id="bt-filter-3" class="filter_e1"><span class="filter_e1_text">Appartements</span></div>
+					    <div id="bt-filter-4" class="filter_e1"><span class="filter_e1_text">Hôtels & restaurants</span></div>					
+					</div>					
+					<div id="gallery" class="gallery"></div>          
+				</section>	
+				<section id="contact">
+					<h2>Contact</h2>
+					<p>Vous avez un projet ? Discutons-en !</p>
+					<form action="#" method="post">
+						<label for="name">Nom</label>
+						<input type="text" name="name" id="name">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<input type="submit" value="Envoyer">
+					</form>
+				</section>	
+			</main>
+		</div>
+		<footer>
+			<nav>
+				<ul>
+					<li class="footer-text-1">Mentions Légales</li>
+				</ul>
+			</nav>
+		</footer>
+		
+
+<script type="module">
+/*Code-Admin-----------------------------------------------------------------------------
+*/
+/*Meca :Connection 
+Activé :Admin via Token ,Stokage local navigateur 
+*/
+/*Connection Debut:
+*/		
+
+	//Elem Dom:
+	const elem_7  = document.querySelector('#menu-text3');	           //Txt:(login)
+	const elem_8  = document.querySelector('.mode-edition-espace');    //Top->Blocks (Mode édition html)
+	const elem_9  = document.querySelector('.mode-edition-g');         //Top->Blocks (Mode édition html)
+	const elem_10 = document.querySelector('.js-mode-edition-1');      //Txt ->(icone:modifier)
+	const elem_11 = document.querySelector('.edition-corp-1');         //Corp-A
+	const elem_12 = document.querySelector('.close-1');
+	const elem_14 = document.querySelector('.container-bt-edition-1');
+	const elem_15 = document.querySelector('.edition-corp-2');         //Corp-B
+	const elem_16 = document.querySelector('.close-2-d');
+	const elem_17 = document.querySelector('.close-2-g');              //Return (flech) ajout photo	
+
+	//Récup Token dans Stockage local
+	let token  = window.localStorage.getItem("token");	
+
+
+    //Controle:Token 
+	if(token== null){
+		console.log("Déconnecté");		
+	}else{
+        console.log("Connecté");
+		console.log("Clé Token-->"+token);					
+		//Modif Dom:	
+        elem_7.innerHTML="";//remove		
+		elem_7.innerHTML='<span class="menu-text3">logout</span>';//change text en -->logout			
+		elem_8.style.display="block"; //Affich:
+		elem_9.style.display="flex";  //Affich:
+		elem_10.style.display="block";//Affich:	
+		}	
+		
+/*Even-All:Click	 
+*/ 
+ 
+		elem_7.addEventListener("click", function() {//Click ->pour Déconnection ok
+		
+			console.log("click->logout");		
+			//remove:Token dans Stockage local
+			window.localStorage.removeItem("token");
+
+			console.log("Apres click-logout->localstorage-->" + token);
+			document.location.href="http://localhost/FrontEnd_fima/Homepage.html";//reload location:
+
+        });
+		
+/*Connection Fin:
+*/	
+	
+
+/*Modal->Mode edition:	
+*/	
+	 	elem_10.addEventListener("click", function() {//Active    ->.edition-corp-1 ->Mes Projets (modifier)-> Galerie photo  
+
+			console.log("click->.js-mode-edition-1");	
+		    elem_11.style.display="block"; 			
+			
+			/*galerie photo> 
+			*/         
+			
+			//NodeList():Tab[0]->Récup Tous elems  (icone) 			
+            const elem_18 = document.querySelectorAll('.mode-edition-gallery_container-icone');
+			const n = elem_18.length;
+			
+	       //debug console.log(elem_18);
+		   //debug console.log("length:"+elem_18.length);
+		   
+		  		  
+			for (let i = 0; i < n; i = i + 1) {		
+				//debug console.log("Index:" + i);
+				//ecoute
+				elem_18[i].addEventListener("click",delete_boucl_1);//call>						
+			}				
+				
+            function delete_boucl_1(){
+				//debug console.log("Ta click");				
+				//debug console.log(this);
+				
+				//stock id: elem>
+				let id = this.id;				
+				//console.log("id:"+id);	
+				
+				//Cache html via display:none; le bock html (parent)
+			    //debug console.log(this.offsetParent.style.display="none");
+				this.offsetParent.style.display="none";				
+				
+				//lié avec hompage delete img   :ok			
+				//va chercher elem id dom cache :ok
+				let elem_19 = document.querySelector("#gallery_figure_id_"+id);				
+				elem_19.style.display="none";				
+				
+				delete_img_bd_js(id);//Call>//deactive nas pour debug				
+				
+			                         }
+			
+		
+	  async function delete_img_bd_js(id){
+	
+			 //Req suprimé dans bd>>
+			let  req_1 = await fetch("http://localhost:5678/api/works/"+id, {
+               method: "DELETE",
+               headers: {
+               Authorization: "Bearer " + token,
+               },
+           
+                 });
+				 
+	           console.log("Serveur-status:"+req_1.status);
+			 
+			if(req_1.status==204){//attente retour serveur: nas+++ 
+			   console.log("MESSAGE:Delete bd_js ->True");
+			
+			  }else{
+			   console.log("MESSAGE:Delete bd_js ->Flase");
+			  
+			  }
+			} 
+		
+           	/*galerie photo>	 
+			*/	 
+			
+			
+        });
+		
+	 	elem_12.addEventListener("click", function() {//Déactivé  ->.edition-corp-1
+			console.log("click->.close-1");	
+		    elem_11.style.display="none"; 
+			window.location.href = "http://localhost/FrontEnd_fima/Homepage.html";
+        });
+ 	 
+	 	elem_14.addEventListener("click", function() {//Active    ->(Ajouter une photo)
+			console.log("click->.container-bt-edition-1");	
+		    elem_11.style.display="none";//cache
+			elem_15.style.display="block";//Affich
+        });
+ 			 
+	 	elem_16.addEventListener("click", function() {//Déactivé  ->.edition-corp-2
+			console.log("click->.close-2-d");	
+		    elem_15.style.display="none";//cache
+			document.location.href = 'http://localhost/FrontEnd_fima/Homepage.html';
+        });	
+		
+	 	elem_17.addEventListener("click", function() {//Déactivé  ->.edition-corp-2
+			console.log("click->.close-2-g");				
+		    elem_15.style.display="none";//cache	
+			elem_11.style.display="block";//affich
+        });	
+	 		
+/*Modal->Mode edition:	
+*/	
+
+
+
+/*Controller Formulaire Post :
+*/
+    const elem_25 = document.querySelector(".bt-edition-2");//form
+	const elem_23 = document.querySelector(".form-");//form
+	const elem_22 = document.querySelector(".js-mx-file");//input File
+	const elem_24 = document.querySelector(".titre1");//input Titre
+
+/*Even: Click	
+*/
+
+	elem_25.addEventListener("click", function() {//Bouton add img
+		console.log("Ta Click-->");
+		//Check-all	
+		
+		//Controle:input files>		
+		let st0         = document.forms[0][0].files.length;		
+		if(st0==0){	
+		    console.log("File-->Erreur_File");
+			elem_23.classList.add("Erreur_File");			
+		}else{
+			elem_23.classList.remove("Erreur_File");		
+		}	
+	
+		//Controle:input Titre>    	
+		let input_titre = document.forms[0][1].value; 
+		
+		if(input_titre==""){
+		
+		    console.log("Titre-->Erreur_Titre");
+			elem_23.classList.add("Erreur_Titre");
+		
+		}else{
+			elem_23.classList.remove("Erreur_Titre");
+		}		
+				
+		//Rechercher class return :booléen    
+		let  rech_class             =  elem_23.classList;//DOMTokenList 
+  		let  result_1               =  rech_class.contains("Erreur_File"); 
+		let  result_2               =  rech_class.contains("Erreur_Titre");  
+		
+		//Multi Condition:ok          
+		if(result_1==true || result_2==true){
+		   console.log("***Erreur***");
+		   
+		   let  messag1         =  document.querySelector(".edition-corp-2-message-envoiy-1"); //flase
+		   let  messag2         =  document.querySelector(".edition-corp-2-message-envoiy-2"); //true		   
+		        messag2.style.display="none";//reset
+		        messag1.style.display="block";//Affich
+		   
+		}else{
+		   console.log("***Formulaire ok***");
+		   let  messag1              =  document.querySelector(".edition-corp-2-message-envoiy-1"); //flase
+		   let  messag2              =  document.querySelector(".edition-corp-2-message-envoiy-2"); //true
+		        messag1.style.display="none";//reset
+		     // messag2.style.display="block";//Affich
+        
+		//------------------------------------R	           
+	    req_post_1();//Call> 
+	
+async	function req_post_1(){
+		//Récup Token dans Stockage local
+	    let token10  = window.localStorage.getItem("token");		
+		let cle = token10; //ok
+		
+		let input_titre       = document.forms[0][1].value; 
+	    let input_image       = document.forms[0][0].files[0]; 
+        let input_categorie   = document.forms[0][2].value;
+	    const  messag2        =  document.querySelector(".edition-corp-2-message-envoiy-2"); 
+		
+	    const title        = input_titre;
+        const categoryId   = input_categorie;
+        const image        = input_image;
+	
+	
+	    const formData = new FormData(); //encode Content-Type: multipart/form-data
+        formData.append("title", title);
+        formData.append("category", categoryId);
+        formData.append("image", image);
+	
+	   //console.log(formData);
+	
+       let  req_2 = await fetch("http://localhost:5678/api/works", {
+            method: "POST",
+            headers: {
+                Authorization: "Bearer " + cle,
+            },
+            body: formData,
+        });	
+	
+	  console.log("serveur node:"+req_2.status);	  
+	  if(req_2.status==201){  	  
+		  messag1.style.display="none";//erreur
+	      messag2.style.display="block";
+		  messag2.innerHTML="Formulaire correctement rempli,Api status:201";
+	      //update
+		  //----------------------------------------------
+		 
+		     //Remove-All 
+		  	//Hompage:
+			let  remove_1   = document.querySelector('#gallery');			
+		     remove_1.innerHTML="";
+				
+			//mode-edition:ok
+			let  remove_2   = document.querySelector('#mode-edition-gallery');				
+			remove_2.innerHTML="";
+	  
+			update_after_add_img();//Call>
+			
+		async	function update_after_add_img(){//apres add img
+				//Récuperation Bd_json Api:
+				const st0_1     =   await fetch("http://localhost:5678/api/works");	
+				let bd_json     =   await st0_1.json();
+				let numbreElem  =   bd_json.length;			
+				let n = bd_json.length;
+			
+				for (let i = 0; i < n; i = i + 1) {
+		
+				//console.log("Index:" + i);  				
+				//Creat_Block(index){} clone:
+				//-----------------------------A
+				let parent1    = document.querySelector("#gallery");
+				let figure     = document.createElement("figure");
+				let img        = document.createElement("img");
+				let figcaption = document.createElement("figcaption");
+
+				//Add Dom apendChild() dans elem parent dom
+				parent1.appendChild(figure);
+				figure.appendChild(img);
+				figure.appendChild(figcaption);
+
+				//Add attribut elem =>dyn
+				figure.id = "gallery_figure_id_"+bd_json[i].id;
+				figure.className="gallery_figure";
+				img.id    = bd_json[i].id;
+				img.src   = bd_json[i].imageUrl;
+				img.alt   = bd_json[i].title;
+
+				//Add contenant
+				figcaption.innerHTML = bd_json[i].title;
+				//-----------------------------A
+				
+				//Creat_Block_mode_edition(index){} clone:
+				//-----------------------------B
+				let parent1_x     = document.querySelector("#mode-edition-gallery");
+				let figure_x      = document.createElement("figure");
+				let img_x         = document.createElement("img");
+				let div_x         = document.createElement("div");
+				//Add Dom apendChild() dans elem parent dom
+				parent1_x.appendChild(figure_x );
+				figure_x.appendChild(img_x );
+				figure_x.appendChild(div_x );
+				//Add attribut elem =>dyn
+				figure_x.id       = bd_json[i].id;
+				figure_x.className="mode-edition-gallery_figure";	
+				img_x.id          = bd_json[i].id;
+				img_x.src         = bd_json[i].imageUrl;
+				img_x.alt         = bd_json[i].title;
+				img_x.className   ="mode-edition-gallery_img";
+				//Add contenant
+				div_x.innerHTML = '<i class="fa-regular fa-trash-can mode-edition-gallery_icone"></i>';
+				div_x.className="mode-edition-gallery_container-icone";
+				div_x.id=bd_json[i].id;
+				//-----------------------------B		
+							}				  
+		   
+						location.href = 'http://localhost/FrontEnd_fima/Homepage.html';				
+						}
+															
+					}
+				//------------------------------R					
+				}	
+			} 			
+    });
+
+  
+</script>
+	
+<script>
+/*Form Apercu image avant upload*/
+
+		let mx_File = function(event) {      
+		let mx_image   =  document.querySelector('.mx-img-lien');		
+		let mx_elem_1  =  document.querySelector('.mx-icon-1');
+		let mx_elem_2  =  document.querySelector('.mx-bt_1');
+		let mx_elem_3  =  document.querySelector('.mx-container-10');	
+		//console.log(event);		
+		//creation lien chaine 
+        mx_image.src = URL.createObjectURL(event.target.files[0]);			
+		//cache apres even onchange
+		mx_elem_1.style.display="none";
+		mx_elem_2.style.display="none";
+		mx_elem_3.style.display="none";		
+		  };
+
+</script>
+		
+<script type="module">
+/*
+Dev: loc bernard Meca:
+
+Pages dynamiques:
+
+Récuperation Bd_json Api
+Reset contenu elem  noeud Dom
+Recuperation donnéé json
+Http beginning ->Création noeud Dom
+*/
+/*Code-Hompage---------------------------------------------------------------------------
+*/
+
+	//Récuperation Bd_json Api:
+	const st0       =   await fetch("http://localhost:5678/api/works");	
+	let bd_json     =   await st0.json();
+    let numbreElem  =   bd_json.length;
+	
+	no_filtre();//Call>//Http beginning
+
+	const   parm              = "debug";
+	const   parm1             = "Objets";
+	const   parm2             = "Appartements";
+	const   parm3             = "Hotels & restaurants";
+	
+	const  	elem_1            = document.querySelector('#bt-filter-1');
+	const  	elem_2            = document.querySelector('#bt-filter-2');
+    const  	elem_3            = document.querySelector('#bt-filter-3');
+	const  	elem_4            = document.querySelector('#bt-filter-4');
+   
+    const  	elem_5            = document.querySelectorAll('.filter_e1');     
+    const 	elem_6            = document.querySelectorAll('.filter_e1_text');
+	const 	elem_5_lists      = elem_5.length; 
+ 
+//Even-all:
+
+	elem_1.addEventListener('click', (event) => click_0(event)); 
+	elem_2.addEventListener('click', (event) => click_1(event, parm1));
+	elem_3.addEventListener('click', (event) => click_2(event, parm2)); 
+	elem_4.addEventListener('click', (event) => click_3(event, parm3));
+	
+	
+    
+	function click_0(event){
+	   console.log("Click->Bouton->Tous");	
+	   
+       update_class(elem_1);
+	   no_filtre();
+	}
+
+	function click_1(event, parm1){	  
+	 console.log("Click->Bouton->Objets");	
+	 
+	 update_class(elem_2);	 	 
+	 remove_gallery(); 	
+	 
+	 let    mots = parm1;
+	 
+	 Tri_bd_json(numbreElem,mots);
+	}
+
+	function click_2(event, parm2){	
+     console.log("Click->Bouton->Appartements");
+	 
+	 update_class(elem_3);
+	 
+	 remove_gallery();   
+	 let    mots = parm2;
+	 
+	 Tri_bd_json(numbreElem,mots);
+	}
+
+	function click_3(event, parm3){	
+     console.log("Click->Bouton->Appartements");
+	 
+	 update_class(elem_4);	 
+	 remove_gallery();   
+	 let    mots = parm3;	 
+	 Tri_bd_json(numbreElem,mots);
+	}
+
+	function update_class(elem){//Remove class ,Add class  Style Color filter
+	 
+		//remove class: 
+		for (let i = 0; i < elem_5_lists; i = i + 1) {
+		
+			//console.log(i);  		
+			elem_5[i].className="filter_e1";     //background-color
+			elem_6[i].className="filter_e1_text";//color		
+		} 
+	 
+	        
+		//add:
+		 elem.className="filter_e1 js-background-color-vert";         //add class background-color
+		 elem.childNodes[0].className="filter_e1_text js-color-blanc";//add class color
+		}
+
+	function Tri_bd_json(numbreElem,mots){//Parcourir-All Tableaux return Cle
+    
+		
+		for (let i = 0; i < numbreElem; i = i + 1) {//Boucle*11 etc ...
+	
+	    //Condition: Catégory name =>bd_json
+		let st1 = bd_json[i].category.name;//TAB[] -All
+		
+	
+		
+		if( mots == st1){//Dyn
+			//console.log("Trouvé: True-->" + i);			
+			//console.log(bd_json[i]);	//resul=> True Bd Json	
+			/*console.log(bd_json[i].id);*/console.log("Index:" + bd_json[i].id);			 
+	        //console.log(bd_json[i].title);
+			//console.log(bd_json[i].categoryId);
+			//console.log(bd_json[i].userId);
+			//console.log(bd_json[i].category.id);
+			//console.log(bd_json[i].category.name);
+			  
+			  let index = i;
+			 //call>
+			 Creat_Block(index); 
+			 
+						           }
+    
+        
+		                                       }
+	}
+
+    function no_filtre(){//Http beginning	
+			
+	    remove_gallery(); 	 
+
+		let n = bd_json.length;
+		
+		for (let i = 0; i < n; i = i + 1) {
+		
+		//console.log("Index:" + i);  
+		
+		Creat_Block(i);//call> 
+		Creat_Block_mode_edition(i);//call> 
+		
+		}
+	
+	}
+	
+	function Creat_Block(index){//Création :1 Blocks de Noeuds DOM !
+
+
+	let parent1    = document.querySelector("#gallery");
+	let figure     = document.createElement("figure");
+	let img        = document.createElement("img");
+	let figcaption = document.createElement("figcaption");
+
+	//Add Dom apendChild() dans elem parent dom
+	parent1.appendChild(figure);
+	figure.appendChild(img);
+	figure.appendChild(figcaption);
+
+	//Add attribut elem =>dyn
+	figure.id = "gallery_figure_id_"+bd_json[index].id;
+	figure.className="gallery_figure";
+	img.id    = bd_json[index].id;
+	img.src   = bd_json[index].imageUrl;
+	img.alt   = bd_json[index].title;
+
+	//Add contenant
+	figcaption.innerHTML = bd_json[index].title;
+
+	}
+
+	function remove_gallery(){//reset contenu id="gallery"	//Hompage et Mode-edition
+	
+	    //Hompage:
+		const  e   = document.querySelector('#gallery');	
+		e.innerHTML="";
+		
+		//mode-edition:ok
+		const  e1   = document.querySelector('#mode-edition-gallery');	
+		e1.innerHTML="";
+		
+	
+	}
+	
+	function Creat_Block_mode_edition(index){//Création :1 Blocks de Noeuds DOM Clone=> Mode-edition
+
+
+	let parent1    = document.querySelector("#mode-edition-gallery");
+	let figure     = document.createElement("figure");
+	let img        = document.createElement("img");
+	let div = document.createElement("div");
+	
+	
+
+	//Add Dom apendChild() dans elem parent dom
+	parent1.appendChild(figure);
+	figure.appendChild(img);
+	figure.appendChild(div);
+
+	//Add attribut elem =>dyn
+	figure.id       = bd_json[index].id;
+	figure.className="mode-edition-gallery_figure";
+	
+	img.id          = bd_json[index].id;
+	img.src         = bd_json[index].imageUrl;
+	img.alt         = bd_json[index].title;
+	img.className   ="mode-edition-gallery_img";
+
+	//Add contenant
+	div.innerHTML = '<i class="fa-regular fa-trash-can mode-edition-gallery_icone"></i>';
+	div.className="mode-edition-gallery_container-icone";
+    div.id=bd_json[index].id;
+	}	
+	
+	
+/*Code-Hompage-----------------------------------------------------------------------------
+*/
+
+</script>	
+
+	
+		
+	</body>
+</html>
