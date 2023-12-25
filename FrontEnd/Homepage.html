@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="http://localhost/FrontEnd/favicon.ico">	
+		<title>Sophie Bluel - Architecte d'intérieur</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+		<meta name="description" content="">
+		<!--Icone fonts-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+		
+		<link rel="stylesheet" href="./assets/style.css">
+		<!--Document checking completed. No errors or warnings to show.25.12.2023-->
+	</head>
+<body class="body">	
+	<!--Admin-->
+		<div class="mode-edition-espace"></div>
+		<div class="mode-edition-g"><!--flex-->
+			<div class="container-mode-edition"><!--flex-->
+				<div class="mode-edition_icone"><i class="fa-regular fa-pen-to-square"></i></div>
+				<div class="mode-edition_text">Mode édition</div>
+			</div>
+		</div>	
+		<div class="edition-corp-1">		  
+			<div class="corp-loader-1">				
+				<div class="contenaire-close-1"><!--flex-->
+					<div class="close-1"><i class="fa-solid fa-xmark close-i"></i></div>				
+				</div>				
+				<div class="container-galerie-1"><span class="galerie_text">Galerie photo</span></div>			  
+				<div class="edition-corp-img-gril-g-1">				
+					<div id="mode-edition-gallery" class=""></div>				
+				</div>	
+				<div class="edition-corp-trait-1"></div>			
+				<div class="container-bt-edition-1">
+					<div class="bt-edition-1"><span class="bt-edition-txt-1">Ajouter une photo</span></div>
+				</div>					
+			</div>			
+		</div>
+		<div class="edition-corp-2">			
+			<div class="corp-loader-2">			
+				<form name="my" class="form-">			
+					<div class="contenaire-close-2"><!--flex-->
+						<div class="close-2-g"><i class="fa-solid fa-arrow-right fa-rotate-180 flech-return"></i></div>
+						<div class="close-2-d"><i class="fa-solid fa-xmark close-i"></i></div>				
+					</div>				
+					<div class="container-galerie-2"><span class="galerie_text-2">Ajout photo</span></div>				
+					<div class="mx-container-g">	
+						<div class="mx-contenaire_1">		
+							<div class="mx-container-img-s"><img class="mx-img-lien img-s"  width="129" src="http://localhost/FrontEnd/assets/images/calque.png" alt="image all"></div>			
+							<div class="mx-icon-1"></div>			
+							<input  id="mx-file" class="js-mx-file"  type="file" accept="image/*" name="image"  onchange="mx_File(event)" style="display: none;">
+							<label for="mx-file" class="mx-bt_1">+ Ajouter photo</label>
+							<div class="mx-container-10"><span class="mx-container-10-txt">jpg,png:4mo max</span></div>			
+						</div>	  
+					</div>	
+					<div class="container-ajout-photo-input">
+						<div class="ajout-photo-4">Titre</div>
+						<div><input type="text" class="titre1" name="titre1"></div>				
+						<div class="ajout-photo-5">Catégorie</div>				
+						<select class="select-add-ajout-photo categorie2" name="ice-cream">
+							<option value="1">Objets</option>
+							<option value="2">Appartements</option>
+							<option value="3">Hôtels & restaurants</option>							
+						</select>					
+					</div>				
+					<div class="edition-corp-trait-2"></div>				
+					<div class="edition-corp-2-message-envoiy">
+						<span class="edition-corp-2-message-envoiy-1">Formulaire n’est pas correctement rempli</span>
+						<span class="edition-corp-2-message-envoiy-2">Formulaire correctement rempli</span>
+					</div>				
+					<div class="container-bt-edition-2">
+						<div class="bt-edition-2"><span class="bt-edition-txt-2">Valider</span></div>
+					</div>							
+				</form>	
+			</div>
+	    </div>
+		<!--Admin-->
+		<div class="main-container">
+			<header><!--flex-->
+				<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1><!--flex-->
+				<nav>
+					<ul>
+						<li><a class="menu-text"  href="http://localhost/FrontEnd/Homepage.html#projets">projets</a></li>
+						<li><a class="menu-text"  href="http://localhost/FrontEnd/Homepage.html#contact">contact</a></li>
+						<li id="menu-text3"><a class="menu-text3" href="http://localhost/login/index.html">login</a></li>
+						<li><img class="menu-icon" src="./assets/icons/instagram.png" alt="Instagram"></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section id="introduction">
+				     <h3 class="D">w</h3>
+					<figure>
+						<img src="./assets/images/sophie-bluel.png" alt="">
+					</figure>
+					<article>
+						<h2>Designer d'espace</h2>
+						<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+						<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+						<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+					</article>
+				</section>
+				<section id="portfolio">				
+				    <div class="js-container">
+						<h2 id="projets">Mes Projets</h2>					
+						<div class="js-mode-edition-1"><i class="fa-regular fa-pen-to-square icone-mode-edition-2"></i><span class="js-mode-edition-txt"> modifier</span></div>
+					</div>					
+					<div class="container_filter"><!--flex-->
+						<div id="bt-filter-1" class="filter_e1 js-background-color-vert"><span class="filter_e1_text js-color-blanc">Tous</span></div>
+					    <div id="bt-filter-2" class="filter_e1"><span class="filter_e1_text">objets</span></div>
+					    <div id="bt-filter-3" class="filter_e1"><span class="filter_e1_text">Appartements</span></div>
+					    <div id="bt-filter-4" class="filter_e1"><span class="filter_e1_text">Hôtels & restaurants</span></div>					
+					</div>					
+					<div id="gallery" class="gallery"></div>          
+				</section>	
+				<section id="contact">
+					<h2>Contact</h2>
+					<p>Vous avez un projet ? Discutons-en !</p>
+					<form action="#" method="post">
+						<label for="name">Nom</label>
+						<input type="text" name="name" id="name">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<input type="submit" value="Envoyer">
+					</form>
+				</section>	
+			</main>
+		</div>
+		<footer>
+			<nav>
+				<ul>
+					<li class="footer-text-1">Mentions Légales</li>
+				</ul>
+			</nav>
+		</footer>
+		
+
+<script type="module" src="assets/js/admin_meca.js"></script>
+<script src="assets/js/Apercu_img_upload_meca.js"></script>			
+<script type="module" src="assets/js/hompage_meca.js"></script>			
+</body>
+</html>

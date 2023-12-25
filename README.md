@@ -10,8 +10,10 @@ Code du projet 6 d'intégrateur web.
  
  
 # Portfolio_architecte_master
-dev loc bernard
+dev loc bernard 25.12.2023
 
-add npm
+lien:
+ https://github.com/locbernard35/Portfolio_architecte_master
  
- 
+Clone:
+https://github.com/locbernard35/Portfolio_architecte_master.git
