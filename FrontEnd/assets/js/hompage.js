@@ -4,6 +4,10 @@ Dev: loc bernard Meca:
 Pages dynamiques:
 
 Récuperation Bd_json Api
+
+Request URL: http://localhost:5678/api/categories
+Récuperation categories-all Bd_json Api swagger->update 30.12.2023
+
 Reset contenu elem  noeud Dom
 Recuperation donnéé json
 Http beginning ->Création noeud Dom
@@ -15,12 +19,18 @@ Http beginning ->Création noeud Dom
 	let bd_json     =   await st0.json();
     let numbreElem  =   bd_json.length;
 	
+	//Récuperation categories-all Bd_json Api: Returns all categories swagger
+	const st0_c                  =   await fetch("http://localhost:5678/api/categories");	
+	let categories_bd_json_c     =   await st0_c.json();
+    let numbreElem_c             =   categories_bd_json_c.length;
+	
+	
 	no_filtre();//Call>//Http beginning
 
 	const   parm              = "debug";
-	const   parm1             = "Objets";
-	const   parm2             = "Appartements";
-	const   parm3             = "Hotels & restaurants";
+  //const   parm1             = "Objets";
+  //const   parm2             = "Appartements";
+  //const   parm3             = "Hotels & restaurants";
 	
 	const  	elem_1            = document.querySelector('#bt-filter-1');
 	const  	elem_2            = document.querySelector('#bt-filter-2');
@@ -34,9 +44,9 @@ Http beginning ->Création noeud Dom
 //Even-all:
 
 	elem_1.addEventListener('click', (event) => click_0(event)); 
-	elem_2.addEventListener('click', (event) => click_1(event, parm1));
-	elem_3.addEventListener('click', (event) => click_2(event, parm2)); 
-	elem_4.addEventListener('click', (event) => click_3(event, parm3));
+	elem_2.addEventListener('click', (event) => click_1(event));
+	elem_3.addEventListener('click', (event) => click_2(event)); 
+	elem_4.addEventListener('click', (event) => click_3(event));
 	
 	
     
@@ -47,35 +57,31 @@ Http beginning ->Création noeud Dom
 	   no_filtre();
 	}
 
-	function click_1(event, parm1){	  
-	 console.log("Click->Bouton->Objets");	
+	function click_1(event){//Update:30.12.2023	  
+	 console.log("Click->Bouton->Objets");		 
 	 
 	 update_class(elem_2);	 	 
-	 remove_gallery(); 	
-	 
-	 let    mots = parm1;
-	 
-	 Tri_bd_json(numbreElem,mots);
+	 remove_gallery(); 
+	
+	categories_Tri_object_bd_json(numbreElem);//Call> 	
 	}
 
-	function click_2(event, parm2){	
+	function click_2(event){//Update:30.12.2023	 	
      console.log("Click->Bouton->Appartements");
 	 
-	 update_class(elem_3);
-	 
-	 remove_gallery();   
-	 let    mots = parm2;
-	 
-	 Tri_bd_json(numbreElem,mots);
+	 update_class(elem_3);	 
+	 remove_gallery();  
+	
+	categories_Tri_Appartements_bd_json(numbreElem);//Call> 	 
 	}
 
-	function click_3(event, parm3){	
-     console.log("Click->Bouton->Appartements");
+	function click_3(event, parm3){//Update:30.12.2023	 
+     console.log("Click->Bouton->Hotels & restaurants");
 	 
 	 update_class(elem_4);	 
-	 remove_gallery();   
-	 let    mots = parm3;	 
-	 Tri_bd_json(numbreElem,mots);
+	 remove_gallery(); 	
+	
+	categories_Tri_Hotels_restaurants_bd_json(numbreElem);//Call>	 
 	}
 
 	function update_class(elem){//Remove class ,Add class  Style Color filter
@@ -94,6 +100,87 @@ Http beginning ->Création noeud Dom
 		 elem.childNodes[0].className="filter_e1_text js-color-blanc";//add class color
 		}
 
+
+    function categories_Tri_object_bd_json(numbreElem){
+	console.log("Categories->"+categories_bd_json_c[0].name);//Tab[]->"name": "Objets"		
+	let categories_objets = categories_bd_json_c[0].name;
+	
+	//console.log(numbreElem);//length->x	
+	//console.log(bd_json[1].category.name);	
+	//----------------------------	
+	for (let i = 0; i < numbreElem; i = i + 1) {// Boucle etc ...
+	
+	    //Condition: Catégory name =>bd_json
+		let st1 = bd_json[i].category.name;//TAB[] -All
+		
+	
+		
+		if( categories_objets == st1){//Dyn		
+			console.log("Index:" + bd_json[i].id); 
+
+			  let index = i;
+			 //call>
+			Creat_Block(index); 			 
+						           }  
+        
+		                                       }	   
+	//----------------------------
+		
+	}
+	
+    function categories_Tri_Appartements_bd_json(numbreElem){
+		
+	console.log("Categories->"+categories_bd_json_c[1].name);//Tab[]->"name": "Appartements"		
+	let categories_objets = categories_bd_json_c[1].name;	
+
+	for (let i = 0; i < numbreElem; i = i + 1) {// Boucle etc ...
+	
+	    //Condition: Catégory name =>bd_json
+		let st1 = bd_json[i].category.name;//TAB[] -All
+		
+	
+		
+		if( categories_objets == st1){//Dyn		
+			console.log("Index:" + bd_json[i].id); 
+
+			  let index = i;
+			 //call>
+			Creat_Block(index); 			 
+						           }  
+        
+		                                       }	   
+	
+		
+	}
+	
+    function categories_Tri_Hotels_restaurants_bd_json(numbreElem){
+		
+	console.log("Categories->"+categories_bd_json_c[2].name);//Tab[]->"name": "Hotels & restaurants"		
+	let categories_objets = categories_bd_json_c[2].name;	
+
+	for (let i = 0; i < numbreElem; i = i + 1) {// Boucle etc ...
+	
+	    //Condition: Catégory name =>bd_json
+		let st1 = bd_json[i].category.name;//TAB[] -All
+		
+	
+		
+		if( categories_objets == st1){//Dyn		
+			console.log("Index:" + bd_json[i].id); 
+
+			  let index = i;
+			 //call>
+			Creat_Block(index); 			 
+						           }  
+        
+		                                       }	   
+	
+		
+	}	
+
+
+
+/*Déactivé
 	function Tri_bd_json(numbreElem,mots){//Parcourir-All Tableaux return Cle
     
 		
@@ -107,7 +194,7 @@ Http beginning ->Création noeud Dom
 		if( mots == st1){//Dyn
 			//console.log("Trouvé: True-->" + i);			
 			//console.log(bd_json[i]);	//resul=> True Bd Json	
-			/*console.log(bd_json[i].id);*/console.log("Index:" + bd_json[i].id);			 
+			//console.log(bd_json[i].id);//console.log("Index:" + bd_json[i].id);			 
 	        //console.log(bd_json[i].title);
 			//console.log(bd_json[i].categoryId);
 			//console.log(bd_json[i].userId);
@@ -123,6 +210,7 @@ Http beginning ->Création noeud Dom
         
 		                                       }
 	}
+*/	
 
     function no_filtre(){//Http beginning	
 			

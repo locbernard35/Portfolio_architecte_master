@@ -1,9 +1,9 @@
 
-		const  	elem_1 = document.querySelector("#bt-connection");    
+	   const  	elem_1 = document.querySelector("#bt-connection");    
 //Even-all:
 	elem_1.addEventListener('click', (event) => connect(event)); 	
 
-	 function connect(){
+	   function connect(){
 		console.log("Ta Click ->Bt:");			
 		
 		let  	elem_2 = document.querySelector("#mail");
@@ -102,6 +102,7 @@
 			}		
 		
 	   }
-	  function RedirectionHomepage(){
-        document.location.href="http://localhost/FrontEnd/Homepage.html";
+	   
+	   function RedirectionHomepage(){
+        document.location.href="http://127.0.0.1:5500/Homepage.html";
       }

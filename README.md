@@ -17,3 +17,9 @@ lien:
  
 Clone:
 https://github.com/locbernard35/Portfolio_architecte_master.git
+
+
+# Ouverture avec VSCode: update lien 30.12.2023
+ http://127.0.0.1:5500/Homepage.html
+ 
+ 

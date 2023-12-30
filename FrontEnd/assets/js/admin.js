@@ -57,7 +57,7 @@ Activé :Admin via Token ,Stokage local navigateur
 			window.localStorage.removeItem("token");
 
 			console.log("Apres click-logout->localstorage-->" + token);
-			document.location.href="http://localhost/FrontEnd/Homepage.html";//reload location:
+			document.location.href="http://127.0.0.1:5500/Homepage.html";//reload location:
 
         });
 		
@@ -142,7 +142,7 @@ Activé :Admin via Token ,Stokage local navigateur
 	 	elem_12.addEventListener("click", function() {//Déactivé  ->.edition-corp-1
 			console.log("click->.close-1");	
 		    elem_11.style.display="none"; 
-			window.location.href = "http://localhost/FrontEnd/Homepage.html";
+			window.location.href = "http://127.0.0.1:5500/Homepage.html";
         });
  	 
 	 	elem_14.addEventListener("click", function() {//Active    ->(Ajouter une photo)
@@ -154,7 +154,7 @@ Activé :Admin via Token ,Stokage local navigateur
 	 	elem_16.addEventListener("click", function() {//Déactivé  ->.edition-corp-2
 			console.log("click->.close-2-d");	
 		    elem_15.style.display="none";//cache
-			document.location.href = 'http://localhost/FrontEnd/Homepage.html';
+			document.location.href = "http://127.0.0.1:5500/Homepage.html";
         });	
 		
 	 	elem_17.addEventListener("click", function() {//Déactivé  ->.edition-corp-2
@@ -341,7 +341,7 @@ async	function req_post_1(){
 				//-----------------------------B		
 							}				  
 		   
-						location.href = 'http://localhost/FrontEnd/Homepage.html';				
+						location.href = "http://127.0.0.1:5500/Homepage.html";				
 						}
 															
 					}
